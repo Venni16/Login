@@ -1,38 +1,264 @@
-.App {
-  text-align: center;
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    color: black;
+}
+.head{
+    color: rgb(34, 36, 172);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    margin-top: -280px;
+}
+.introtopicon{
+    width: 130px;
+    height: 70px;
+    margin-bottom: -15px;
+    margin-top: -15px;
+}
+.loglink2{
+    margin-left: 80%;
+    padding-top:2px;
+    text-decoration: solid;
+    color: rgb(2, 2, 8);
+}
+.contentintro{
+    margin-top: 20%;
+    margin-left: 5%;
+}
+.h1intro{
+   color: blue;
+   font-size: 100px;
+   margin-left: -15px;
+}
+.h3intro{
+    margin-top: -20px;
+    font-size: 50px;
+}
+.h4intro{
+    font-size: 45px;
+}
+.btnintro{
+    border: none;
+    background-color: rgb(4, 4, 105);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    
+}
+.introimg{
+        margin-left: 45%;
+        margin-top: -30%;
+        width: 50%;
+        height: 50%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+
+
+
+
+
+
+
+
+.head1{
+    color: rgb(34, 36, 172);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    margin-top: -60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.h-screen-center{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:darkgray;
+    margin-top: 50px;
+    z-index: 0;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-form{
+    background-color:white;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 20px;
+}
+.lock-icons{
+    width: 40px;
+    height: 40px;
+    color: white;
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.icon-img{
+    margin-top: 1px;
+    border-radius: 25px;
+    border: 2px solid black;
+    margin-left: -5px;
+    
+}
+.form{
+    display: grid;
+    gap: 15px;
+}
+.form-element{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form-element input {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.form-element .input-container{
+    border: 1px solid black;
+   padding: 5px;
+    border-radius: 3px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.icons-password{
+    cursor: pointer;
+}
+.eyeopen{
+   display: flex;
+  
+}
+.form button{
+    padding: 7px 20px;
+    width: fit-content;
+    border-radius: 5px;
+    border: none;
+    background-color:  rgb(90, 13, 235);
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 7px;
+    margin:0 auto;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.form button:hover{
+    background-color: rgb(66, 10, 170);
+    transform: scale(1.1);
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.alertbox{
+    background-color: black;
+    opacity: 0.9; 
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+
+}
+.alert-content{
+    background-color:#fd6569;
+    opacity: 100%;
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 2;
+ 
+}
+.alert-content img{
+    margin-left: 100%;
+    border: none;
+    margin-top: -30px;
+    display: flex;
+}
+.alert-content p{
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.newuserbtn{
+    display: flex;
+    margin-top: -130px;
+    margin-left: 48%;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+.popupclosebtn{
+    margin-left: 95%;
+    border-radius: 6px;
+    border: 2px solid black;
+    text-size-adjust: 40;
+    background-color: red;
+    padding: 2px;
+}
+.signuplink{
+    text-decoration: none;
+}
+.signuplink:hover{
+    text-decoration: underline;
+}
+.profile-pic{
+    width: 85px;
+    height: 105px;
+    border-radius: 100px;
+    overflow: hidden;
+    box-shadow: 2px 2px 7px rgba(0,0,0,0.2);
+    background-color: rgb(223, 205, 205);
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+.upload-pic{
+    position: absolute;
+    color:white;
+    font-size: 10px;
+    z-index: 10;
+    bottom: 0;
+    width: 55%;
+    text-align: center;
+    margin-bottom: 6px;
+    margin-left: 18px;
+    height: 25px;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 250px;
+}
+.sign-form-lock-container{
+    width: 85px;
+    height: 105px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 150px;
+    position: relative;
+
+}
+#upload-pic-input{
+    display: none;
 }
